@@ -21,6 +21,11 @@ double y2 = Convert.ToDouble(Console.ReadLine());
 System.Console.Write("z = ");
 double z2 = Convert.ToDouble(Console.ReadLine());
 
-double distance = Math.Round((Math.Sqrt(Math.Pow((x2-x1),2)+Math.Pow((y2-y1),2)+Math.Pow((z2-z1),2))),2);
+
+double x = x2 - x1;
+double y = y2 - y1;
+double z = z2 - z1;
+
+double distance = Math.Round((Math.Sqrt(Math.Pow(x, 2) + Math.Pow(y, 2) + Math.Pow(z, 2))),2);
 
 System.Console.WriteLine($"Расстояние между точками = {distance} ");
